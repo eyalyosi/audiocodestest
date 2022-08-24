@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from 'styled-components'
-import { getTests, deleteTests, addToSuite, getSortTests } from '../firebase'
+import { getTests, deleteTests, addToSuite } from '../firebase'
 import { Icon } from '@iconify/react';
 import TestTable from '../components/TestTable'
 import Tooltip from '@mui/material/Tooltip';
 import TestModal from '../components/TestModal';
 import Filter from '../components/Filter';
 import IconButton from '@mui/material/IconButton';
-import { assert, async } from "@firebase/util";
 
 const Section = styled.div`
     display: flex;

@@ -53,23 +53,13 @@ const Suite = () => {
     const [filterSearch, setFilterSearch] = useState(null)
     const [open, setOpen] = useState(false);
     const [isFilterOpen, setIsFilterOpen] = useState(false)
-    const [sortBy, setSortBy] = useState(null)
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
     useEffect(() => {
-        getSuites(filterSearch, sortBy)
+        getSuites(filterSearch)
             .then((res) => setTests(res))
-    }, [filterSearch, sortBy])
-
-    const onSort = () => {
-        setSortBy(sortBy === "asc" ? "desc" : "asc")
-    }
-
-    const clearSort = () => {
-        setSortBy(null)
-        setFilterSearch(null)
-    }
+    }, [filterSearch, ])
 
     const deleteTest = () => {
         removeFromSuite(selectedIds)
@@ -122,7 +112,7 @@ const Suite = () => {
 
                 </HeaderActionContainer>
             </Header>
-            {tests && <TestTable tests={tests} selectedIds={selectedIds} setSelectedIds={setSelectedIds} onSort={onSort} sortBy={sortBy} clearSort={clearSort}/>}
+            {tests && <TestTable tests={tests} selectedIds={selectedIds} setSelectedIds={setSelectedIds} />}
             <TestModal open={open} handleClose={handleClose} deleteTest={deleteTest} text={text} />
         </Section>
     )
