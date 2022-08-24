@@ -10,4 +10,28 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    
+} 
+
+.MuiPaper-root {
+  width: 300px;
+  padding: 0;
+}
+
+.TestTable__Chekbox {
+  accent-color: #863654;
+} 
+
+.TestRow__Checkbox{
+  accent-color: #863654;
+}
+
+.AddTest__Form-title-error{
+  color: red;
+  padding-left: 20px;
+}
+
+.NavBar__Logo {
+  width: 50px; 
+  height: 50px;
 }
