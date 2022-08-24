@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/audiocodestest/static/css/main.94f9be66.css",
+    "main.js": "/audiocodestest/static/js/main.5c09da4b.js",
+    "static/js/787.2746eaee.chunk.js": "/audiocodestest/static/js/787.2746eaee.chunk.js",
+    "static/media/logo.svg": "/audiocodestest/static/media/logo.09039fc4711652a3f4e1b97c633dc83b.svg",
+    "index.html": "/audiocodestest/index.html",
+    "main.94f9be66.css.map": "/audiocodestest/static/css/main.94f9be66.css.map",
+    "main.5c09da4b.js.map": "/audiocodestest/static/js/main.5c09da4b.js.map",
+    "787.2746eaee.chunk.js.map": "/audiocodestest/static/js/787.2746eaee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94f9be66.css",
+    "static/js/main.5c09da4b.js"
+  ]
+}
